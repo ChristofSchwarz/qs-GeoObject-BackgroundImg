@@ -13,3 +13,4 @@ The approach in a nutshell:
  
  Follow the 11 - 13 minutes video above. Enjoy
  
+ ![alt text](https://github.com/ChristofSchwarz/qs-GeoObject-BackgroundImg/raw/master/projection.png "Screenshot")
