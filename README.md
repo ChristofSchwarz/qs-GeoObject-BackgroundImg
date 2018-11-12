@@ -1,17 +1,14 @@
 # qs-GeoObject-BackgroundImg
 Using Qlik Sense's native GeoObject together with any office/shop/plant plan image
 
-Add this code snippet to your load script:
+The steps are explained here in this video https://youtu.be/4uWlmNm95n8
 
-// Define two functions 
-SET fX2Long = Round((RangeMax($2,$3)/2 - $2/2 + $1) * 40075014 / RangeMax($2,$3) - 20037507);
-SET fY2Lat = Round((RangeMax($2,$3)/2- $3/2 + $1) * -40075014 / RangeMax($2,$3) + 20037507);
-
-// Usage: $(fX2Long(x,width,height)) and $(fY2Lat(y,width,height))
-
-SET fFullArea = '[[' & Round((RangeMax($1,$2)/2 - $1/2) * 40075014 / RangeMax($1,$2) - 20037507) 
-    & ',' & Round((RangeMax($1,$2)/2 - $2/2) * -40075014 / RangeMax($1,$2) + 20037507)
-    & '],['  & Round((RangeMax($1,$2)/2 + $1/2 ) * 40075014 / RangeMax($1,$2) - 20037507)
-    & ',' & Round((RangeMax($1,$2)/2 + $2/2) * -40075014 / RangeMax($1,$2) + 20037507) & ']]';
-
-// Usage: $(fFullArea(width,height)) 
+The approach in a nutshell:
+ * you have a background image of a floor/shop/office/whatever plan (a yacht ;-) which you want to use as a background to visualize data on (e.g. sensor positions)
+ * your plan image will be sliced into pieces of 256x256 pixels in such a manner as if it was a new geo-tile-server
+ * the tiles will be loaded into Qlik Sense own content library and with the help of the code snippets attached here, you can use the Point Layer of the native Geo Object to show data as if it was geographic data
+ * to create the slices I am using a freeware portable version of ImageMagick available here https://imagemagick.org/script/download.php
+ * to compute the right commands (it is a command-line operated tool) I am attaching an Excel, which does that job
+ 
+ Follow the 11 - 13 minutes video above. Enjoy
+ 
