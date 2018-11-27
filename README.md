@@ -3,7 +3,7 @@ Using Qlik Sense's native GeoObject together with any office/shop/plant plan ima
 
 __New: 27-Nov-2018__, now possible up to zoom level 4 (4096x4096 pixels), the Excel allows you to set the max zoom level so that it doesn't create all 341 files when you needed less zoom levels.
 
-![alttext](https://github.com/ChristofSchwarz/pics/raw/master/screenshot-qrs-dealloc.png "screenshot")
+![alttext](https://github.com/ChristofSchwarz/pics/raw/master/exceldropdn.png "screenshot")
 
 The steps are explained here in this video https://youtu.be/4uWlmNm95n8
 
