@@ -1,6 +1,8 @@
 # qs-GeoObject-BackgroundImg
 Using Qlik Sense's native GeoObject together with any office/shop/plant plan image
 
+__New: 27-Nov-2018__, now possible up to zoom level 4 (4096x4096 pixels)
+
 The steps are explained here in this video https://youtu.be/4uWlmNm95n8
 
 The approach in a nutshell:
